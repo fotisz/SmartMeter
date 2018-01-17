@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Meter Visualisation</title>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+  
+    <!-- D3 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.10.0/d3-legend.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="filters-container">
+        <select id="selectDate" class="select-menu" name="selectDate">
+            <option value="jan">Jan - Feb</option>
+            <option value="feb">Feb - Mar</option>
+            <option value="mar">Mar - Apr</option>
+            <option value="apr">Apr - May</option>
+            <option value="may">May - Jun</option>
+            <option value="jun">Jun - Jul</option>
+        </select>
+        <div class="legend-container"></div>
+    </div>
+    <div class="area-chart-container">
+        <div id="area-chart" class="area-chart"></div>
+    </div>
+    <div class="area-chart-sidebar">
+        <div class="sidebar-date-text"></div>
+        <div class="kwh-usage-text-large">0</div>
+        <div class="kwh-usage-text-small">GENERAL SUPPLY KWH USAGE</div>
+        <div class="off-peak-kwh-usage-text-large">0.384</div>
+        <div class="off-peak-kwh-usage-text-small">NATIONAL AVERAGE CONSUMPTION</div>
+        <div class="times-then-national-average-large">0</div>
+        <div class="times-then-national-average-small">TIMES  NATIONAL AVERAGE </div>
+    </div>
+    <div id="scatter-chart"></div>
+    <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+main.js
