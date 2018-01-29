@@ -1,0 +1,325 @@
+body {
+    font: 10px sans-serif;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.breakout {
+    padding: 3em 0;
+}
+
+.intro {
+    margin: 0 auto 32px auto;
+    text-align: center;
+}
+
+.intro h1 {
+    color: #3c3c3c;
+    font: 32px ArnhemPro, Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+.intro p.created-by-text {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: .03em;
+}
+
+.intro p.intro-content-text {
+    margin: 0 auto;
+    padding-bottom: 16px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.filters-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.select-menu {
+    position: absolute;
+}
+
+.cell {
+    cursor: pointer;
+}
+
+.legend-text {
+    text-anchor: start;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.render-buttons-container {
+    position: absolute;
+    right: 0;
+}
+
+.render-buttons {
+    margin-right: 8px;
+}
+
+.area-chart-container {
+    width: 70%;
+    display: inline-block;
+}
+
+.area-chart {
+    vertical-align: top;
+}
+
+.area-chart-sidebar {
+    vertical-align: top;
+    display: inline-block;
+    width: 240px;
+    height: 320px;
+}
+
+svg {
+    font: 12px sans-serif;
+}
+
+.main-area {
+    fill: #009688;
+    fill-opacity: 0.8;
+}
+
+.main-area-2 {
+    fill: none;
+    stroke: #4CAF50;
+    stroke-width: 5px;
+  	stroke-dasharray: 9,9
+}
+
+.brush-area {
+    stroke: #009688;
+    fill: none;
+}
+
+.axis path {
+    fill: none;
+    stroke: #969696;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    stroke: none;
+    fill: #656565;
+}
+
+.line {
+    fill: none;
+    stroke: none;
+    stroke-width: 2px;
+}
+
+.axis line {
+    fill: none;
+    stroke: #009688;
+    stroke-opacity: .25;
+    shape-rendering: crispEdges;
+}
+
+.brush .extent {
+    fill: #009688;
+    fill-opacity: .25;
+    stroke: #009688;
+    shape-rendering: crispEdges;
+}
+
+.resize path {
+    fill: #009688;
+    fill-opacity: .8;
+    stroke: none;
+}
+
+.overlay {
+    fill: none;
+    stroke: none;
+    pointer-events: all;
+}
+
+.circle1 {
+    fill: none;
+}
+
+.focusLine {
+    fill: none;
+    stroke: #000000;
+    stroke-dasharray: 4, 4;
+}
+
+.focusCircle {
+    fill: #ffffff;
+    fill-opacity: .75;
+    stroke: #000000;
+}
+
+.buttons-container {
+    text-align: center;
+}
+
+.buttons {
+    margin: 50px;
+}
+
+.data-stats-in-text {
+    font-size: 20px;
+}
+
+.large-text {
+    font: 48px sans-serif;
+    font-weight: 400;
+    fill: #E91E63;
+    stroke: none;
+}
+
+/* ======================================== */
+/*              BACKGROUND COLOURS          */
+/* ======================================== */
+.mdl-background-color--accent-red {
+    background-color: #F44336 !important;
+}
+
+.mdl-background-color--accent-pink {
+    background-color: #E91E63 !important;
+}
+
+.mdl-background-color--accent-purple {
+    background-color: #9C27B0 !important;
+}
+
+.mdl-background-color--accent-deep-purple {
+    background-color: #673AB7 !important;
+}
+
+.mdl-background-color--accent-indigo {
+    background-color: #3F51B5 !important;
+}
+
+.mdl-background-color--accent-blue {
+    background-color: #2196F3 !important;
+}
+
+.mdl-background-color--accent-cyan {
+    background-color: #00BCD4 !important;
+}
+
+.mdl-background-color--accent-teal {
+    background-color: #00BCD4 !important;
+}
+
+.mdl-background-color--accent-lime {
+    background-color: #CDDC39 !important;
+}
+
+.mdl-background-color--accent-orange {
+    background-color: #FF9800 !important;
+}
+
+/* ======================================== */
+/*                 FONT COLOURS             */
+/* ======================================== */
+.mdl-color--accent-red {
+    color: #F44336 !important;
+}
+
+.mdl-color--accent-pink {
+    color: #E91E63 !important;
+}
+
+.mdl-color--accent-purple {
+    color: #9C27B0 !important;
+}
+
+.mdl-color--accent-deep-purple {
+    color: #673AB7 !important;
+}
+
+.mdl-color--accent-indigo {
+    color: #3F51B5 !important;
+}
+
+.mdl-color--accent-blue {
+    color: #2196F3 !important;
+}
+
+.mdl-color--accent-cyan {
+    color: #00BCD4 !important;
+}
+
+.mdl-color--accent-teal {
+    color: #00BCD4 !important;
+}
+
+.mdl-color--accent-lime {
+    color: #CDDC39 !important;
+}
+
+.mdl-color--accent-orange {
+    color: #FF9800 !important;
+}
+
+.mdl-js-spinner {
+    position: absolute;
+    top: 450px;
+    left: calc(50%);
+}
+
+div.tooltip {
+    position: absolute;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 120px;
+    height: 56px;
+    padding: 2px;
+    font: 12px sans-serif;
+    border: 2px solid;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.kwh-usage-text-large, .off-peak-kwh-usage-text-large {
+    text-align: center;
+    font-size: 6.25em;
+    font-weight: 900;
+    color: #009688;
+    padding: 16px 0 0 0;
+}
+.times-then-national-average-large {
+    text-align: center;
+    font-size: 6.25em;
+    font-weight: 900;
+    color: #fe2323;
+    padding: 16px 0 0 0;
+}
+
+.off-peak-kwh-usage-text-large {
+    color: #4CAF50;
+}
+
+.kwh-usage-text-small, .off-peak-kwh-usage-text-small, .times-then-national-average-small {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+.off-peak-kwh-usage-text-small {
+
+}
+
+.sidebar-date-text {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 900;
+    color: #3c3c3c;
+    padding: 16px 0 0 0;
+}
