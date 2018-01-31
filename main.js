@@ -205,7 +205,7 @@ svg.select(".legendOrdinal")
  * await call a function (useDatasets) to use the data once it is loaded
  */
 queue()
-  .defer(d3.csv, '6_months.csv')
+  .defer(d3.csv, '../6_months.csv')
   .await(useDatasets);
 
 /**
